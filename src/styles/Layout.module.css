@@ -1,27 +1,22 @@
 .Layout {
   overflow: auto;
   scrollbar-width: none; /* Para Firefox */
+  width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+  height: 100vh; /* Ajusta la altura al 100% del viewport */
+  display: flex; /* Utiliza flexbox para el layout */
+  flex-direction: column; /* Organiza los hijos en una columna */
 }
 
 .Layout::-webkit-scrollbar {
   display: none; /* Para Chrome y Safari */
 }
 
-@media (max-width: 430px) {
-  .Layout {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
-    height: 100vh; /* Ajusta la altura al 100% del viewport */
-  }
-}
-
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  flex-grow: 1; /* Permite que el contenedor crezca para ocupar el espacio disponible */
+  overflow: auto; /* Permite el desplazamiento dentro del contenedor si es necesario */
 }
 
 .header {
-  background-color: #f2f2f2;
   padding: 20px;
 }
 
