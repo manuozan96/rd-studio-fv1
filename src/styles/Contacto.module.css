@@ -1,35 +1,26 @@
-.bgContacto {
-  background-image: url("/Fondo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 430px;
-  z-index: 1;
-}
 .contactoText {
-  /* height: 932px; */
   font-family: "DM Sans";
   font-size: 24px;
   color: #ededed;
   line-height: 24px;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
-  margin-left: 40px;
-  margin-top: 400px;
+  margin-left: 10%;
+  margin-top: 100%;
 }
 
 .boldText {
   font-weight: bold;
-  margin-left: 45px; /* Ajusta este valor según tus necesidades */
+  margin-left: 11%; /* Ajusta este valor según tus necesidades */
 }
 
 .infoSection {
   font-family: "DM Sans";
   font-size: 18px;
   color: #ededed;
-  width: 374px;
+  width: 100%;
   text-transform: uppercase;
-  margin-top: 210px;
+  margin-top: 54%;
   bottom: 0;
   right: 0;
   font-style: normal;
@@ -37,11 +28,13 @@
 }
 
 .infoSection div {
-  margin-bottom: 28px;
+  margin-bottom: 8%;
+  width: 100%;
+
 }
 
 .container {
-  width: 430px;
+  width: 100%;
   height: 832px;
   display: flex;
   justify-content: center;
@@ -50,11 +43,10 @@
 }
 
 .innerSection {
-  width: 400px;
-  height: 430px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 10%;
   font-weight: 500;
   text-transform: uppercase;
   font-family: "DM Sans";
@@ -62,15 +54,14 @@
 }
 
 .inputField {
-  width: 402px;
-  height: 45px;
+  width: 100%;
   border: none;
   border-bottom: 1px solid #0a0e0b;
   background-color: #e6e6e6;
-  margin-top: 8px;
+  margin-top: 4%;
   font-weight: 500;
   font-family: "DM Sans";
   font-size: 24px;
   line-height: 31.25px;
-  margin-bottom: 56px;
+  margin-bottom: 5%;
 }

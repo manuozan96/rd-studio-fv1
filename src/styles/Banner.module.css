@@ -1,6 +1,6 @@
 .bannerbg {
   width: 100%;
-  height: 230px;
+  height: 30vh; /* Cambiado de 230px a 30vh */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,8 +9,4 @@
 }
 .span {
   color: red;
-}
-.layout {
-  width: 430px;
-  height: 932px;
 }

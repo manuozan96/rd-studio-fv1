@@ -1,26 +1,29 @@
-/* Button.css */
 .button {
   position: relative;
-  bottom: 10px;
-  width: 374px;
-  margin-left: 25px;
-  height: 56px;
+  bottom: 1em; /* Cambiado de px a em */
+  width: 80%; /* Cambiado de px a % */
+  margin-left: 3%; /* Cambiado de px a % */
+  height: 3.5em; /* Cambiado de px a em */
   gap: 0px;
   border: 1px solid #f94940;
   font-family: "DM Sans";
-  font-size: 24px;
+  font-size: 1.5em; /* Cambiado de px a em */
   font-weight: 500;
-  line-height: 31.25px;
+  line-height: 2em; /* Cambiado de px a em */
   text-align: center;
   background: transparent;
   color: #f94940;
   cursor: pointer;
-  
-  margin: 60px 80px 80px 30px;
-  transition: background 0.3s ease, color 0.3s ease; /* Añadido para la transición suave */
+  margin: 5em 5em 5em 2em; /* Cambiado de px a em */
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-
+/* Añade media queries para adaptar el diseño a diferentes tamaños de pantalla */
+@media (max-width: 600px) {
+  .button {
+    font-size: 1em; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+}
 
 .button:hover {
   background: #f94940;

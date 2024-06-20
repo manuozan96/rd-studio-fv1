@@ -8,14 +8,15 @@
 /* Estilos para pantallas con un ancho de hasta 430px (mobile) */
 @media (max-width: 430px) {
   .Layout {
-    padding: 20px; /* Añade un poco de padding en pantallas pequeñas */
+    margin: 0 auto;
+
   }
 }
 
 /* Estilos para pantallas con un ancho de más de 430px hasta 1280px (desktop) */
 @media (min-width: 431px) and (max-width: 1280px) {
   .Layout {
-    padding: 40px; /* Añade más padding en pantallas más grandes */
+    margin: 0 auto;
   }
 }
 

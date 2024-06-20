@@ -1,15 +1,13 @@
 .contenedor {
-  max-width: 100%;
-  height: auto;
-  padding: 7px 28px 7px 28px;
+  width: 100%;
+  padding: 0.4375em 1.75em;
   position: relative;
-  min-width: 374px;
 }
 
 .imagen {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  object-fit: cover; /* Asegúrate de que la imagen cubra todo el contenedor sin distorsionarse */
+  object-fit: cover;
 }
 
 .t {
@@ -17,15 +15,30 @@
   top: 40%;
   left: 6%;
   transform: translate(-10%, -60%);
-  width: 236px;
-  height: 62px;
+  width: 60%; /* Cambiado a porcentaje para ser más responsivo */
   font-family: "DM Sans";
-  font-size: 24px;
+  font-size: 1.5em; /* Cambiado a em para ser más responsivo */
   font-weight: 400;
-  line-height: 31.25px;
+  line-height: 2em; /* Cambiado a em para ser más responsivo */
   letter-spacing: 0.2em;
   text-align: left;
   color: #ededed;
-  padding: 10px;
-  margin-top: 220px;
+  padding: 0.625em; /* Cambiado a em para ser más responsivo */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 430px) {
+  .imagen {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-left: -6.3%;
+    
+  }
+  .t {
+    margin-top: 50%;
+    margin-left: 7%;
+    font-size: 1.6em; /* Reducir el tamaño de la fuente en pantallas más pequeñas */
+    line-height: 1.6em;
+  }
 }

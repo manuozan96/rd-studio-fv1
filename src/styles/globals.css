@@ -16,17 +16,29 @@
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  position: relative;
-
 }
 
 .bgContacto {
   background-image: var(--background-contacto);
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%; /* Cambiado de 100vh a 100% */
+  width: 100%; /* Asegura que la imagen de fondo cubra todo el ancho del contenedor */
+  height: 100%;
+  position: absolute; /* Cambiado de 'relative' a 'absolute' */
+  top: 0; /* Añadido para alinear la imagen con la parte superior del contenedor */
   object-fit: cover;
-  position: relative;
+}
+
+@media (max-width: 430px) {
+  .bgContacto {
+    background-image: var(--background-contacto);
+    background-repeat: no-repeat;
+    width: 100%; /* Asegura que la imagen de fondo cubra todo el ancho del contenedor */
+    height: 100%;
+    position: absolute; /* Cambiado de 'relative' a 'absolute' */
+    top: 0; /* Añadido para alinear la imagen con la parte superior del contenedor */
+    object-fit: cover;
+    left: 5%;
+  }
 }
 
 * {
@@ -64,4 +76,3 @@
   height: 100vh;
   object-fit: cover;
 }
-
