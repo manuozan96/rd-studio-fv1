@@ -1,7 +1,6 @@
 import Button from "@/components/Button";
 import Layout from "@/components/Layout";
 import PortadaProyecto from "@/components/PortadaProyecto";
-import TextBanner from "@/components/TextBanner";
 
 const Proyectos = () => {
   const proyectos = [

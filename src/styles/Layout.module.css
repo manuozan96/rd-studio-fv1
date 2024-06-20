@@ -1,52 +1,28 @@
 .Layout {
-  overflow: auto;
-  scrollbar-width: none; /* Para Firefox */
-  width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
-  height: 100vh; /* Ajusta la altura al 100% del viewport */
-  display: flex; /* Utiliza flexbox para el layout */
-  flex-direction: column; /* Organiza los hijos en una columna */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.Layout::-webkit-scrollbar {
-  display: none; /* Para Chrome y Safari */
-}
-
-.container {
-  flex-grow: 1; /* Permite que el contenedor crezca para ocupar el espacio disponible */
-  overflow: auto; /* Permite el desplazamiento dentro del contenedor si es necesario */
-}
-
-@media (min-width: 430px) {
-  .container {
-    width: 430px; /* Establece el ancho a 430px en pantallas de 430px o más */
+/* Estilos para pantallas con un ancho de hasta 430px (mobile) */
+@media (max-width: 430px) {
+  .Layout {
+    padding: 20px; /* Añade un poco de padding en pantallas pequeñas */
   }
 }
 
-.header {
-  padding: 20px;
+/* Estilos para pantallas con un ancho de más de 430px hasta 1280px (desktop) */
+@media (min-width: 431px) and (max-width: 1280px) {
+  .Layout {
+    padding: 40px; /* Añade más padding en pantallas más grandes */
+  }
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-}
-
-.navbar li {
-  margin-right: 10px;
-}
-
-.content {
-  margin-top: 20px;
-}
-
-.footer {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
+/* Estilos para pantallas con un ancho de más de 1280px */
+@media (min-width: 1281px) {
+  .Layout {
+    max-width: 1280px; /* Limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+  }
 }

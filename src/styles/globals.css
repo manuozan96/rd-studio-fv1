@@ -11,19 +11,22 @@
 }
 
 .bgGral {
-  background: 
-  linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, transparent 5%),
-  linear-gradient(to bottom right, #efcac8 0%, #ededed 38%);
-  width: 430px;
-}
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, transparent 5%),
+    linear-gradient(to bottom right, #efcac8 0%, #ededed 38%);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: relative;
 
+}
 
 .bgContacto {
   background-image: var(--background-contacto);
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 430px;
-  height: 932px;
+  width: 100%;
+  height: 100%; /* Cambiado de 100vh a 100% */
+  object-fit: cover;
+  position: relative;
 }
 
 * {
@@ -32,54 +35,33 @@
 .bgPro {
   background-image: var(--background-image);
   background-repeat: no-repeat;
-  height: 932px;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  background-position: center;
+  position: relative;
 }
 
 .bgPro2 {
   background-repeat: no-repeat;
-  height: auto;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .bgBlack {
   background-color: #0a0e0b;
   background-repeat: no-repeat;
-  width: 430px;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .bgTransparent {
   background-color: #ededed;
   background-repeat: no-repeat;
-  width: 432px;
-}
-
-.linearGradient {
-  background: var(--background-gradient);
-}
-@keyframes color-change {
-  0% {
-    color: #000000;
-  }
-  50% {
-    color: #f94940;
-  }
-  100% {
-    color: #000000;
-  }
-}
-.app {
-  position: relative;
-}
-
-.app::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 430px;
-  background: var(--background-gradient);
-  pointer-events: none; /* Esto permite que los clics pasen a través del gradiente a los elementos debajo */
-  z-index: 9999; /* Esto coloca el gradiente por encima de cualquier otro contenido dentro de .app que tenga un z-index menor */
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 

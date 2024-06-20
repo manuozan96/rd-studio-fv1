@@ -15,9 +15,12 @@
   background: transparent;
   color: #f94940;
   cursor: pointer;
+  
   margin: 60px 80px 80px 30px;
   transition: background 0.3s ease, color 0.3s ease; /* Añadido para la transición suave */
 }
+
+
 
 .button:hover {
   background: #f94940;

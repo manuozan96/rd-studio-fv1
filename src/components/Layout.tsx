@@ -23,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({
 }) => {
   return (
     <div
-      className={`${styles.Layout} max-w-430px ${
+      className={`${styles.Layout} ${
         transparentBackground ? "bg-transparent" : ""
       } ${backgroundClass}`}
     >

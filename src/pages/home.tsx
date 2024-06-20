@@ -42,10 +42,9 @@ export default function Home() {
       />
       <div>
         <div
+          className={styles.backgroundImage}
           style={{
             marginTop: "480px",
-            backgroundImage: "url(/Rectangleinv.jpg)",
-            maxHeight: "2270px",
           }}
         >
           <p className={styles.textoArriba}>
@@ -66,15 +65,9 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <Button
-        contenido="Contáctanos"
-        style={{
-          position: "relative",
-          backgroundImage: "url(/Rectangle.jpg)",
-          marginTop: "-19px",
-          maxHeight: "196px",
-        }}
-      />
+      <div className={styles.bgImageBg}>
+        <Button contenido="Contáctanos" />
+      </div>
     </Layout>
   );
 }
