@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Banner from "./Banner";
+import styles from "../styles/Layout.module.css";
 
 interface LayoutProps {
   show?: boolean;
@@ -22,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({
 }) => {
   return (
     <div
-      className={`max-w-430px ${
+      className={`${styles.Layout} max-w-430px ${
         transparentBackground ? "bg-transparent" : ""
       } ${backgroundClass}`}
     >

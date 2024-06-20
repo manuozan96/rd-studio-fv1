@@ -82,3 +82,4 @@
   pointer-events: none; /* Esto permite que los clics pasen a través del gradiente a los elementos debajo */
   z-index: 9999; /* Esto coloca el gradiente por encima de cualquier otro contenido dentro de .app que tenga un z-index menor */
 }
+

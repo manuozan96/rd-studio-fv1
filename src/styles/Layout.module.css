@@ -1,37 +1,53 @@
 /* Layout styles */
 
+.Layout {
+  overflow: auto;
+  scrollbar-width: none; /* Para Firefox */
+}
+
+.Layout::-webkit-scrollbar {
+  display: none; /* Para Chrome y Safari */
+}
+
+@media (max-width: 430px) {
+  .Layout {
+    width: 430px;
+    height: 932px;
+  }
+}
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .header {
-    background-color: #f2f2f2;
-    padding: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .navbar li {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .content {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
 }
