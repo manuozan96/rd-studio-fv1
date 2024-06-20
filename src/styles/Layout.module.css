@@ -1,7 +1,5 @@
-/* Layout styles */
-
 .Layout {
-  overflow: hidden;
+  overflow: auto;
   scrollbar-width: none; /* Para Firefox */
 }
 
@@ -11,8 +9,8 @@
 
 @media (max-width: 430px) {
   .Layout {
-    width: 430px;
-    height: 932px;
+    width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+    height: 100vh; /* Ajusta la altura al 100% del viewport */
   }
 }
 
