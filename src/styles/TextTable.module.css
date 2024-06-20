@@ -1,9 +1,7 @@
 .backInterna {
   margin-top: 50px;
-  background-color: #ededed;
   background-repeat: no-repeat;
   width: 430px;
-  padding: 1px; /* Ajusta este valor según tus necesidades */
 }
 
 .container {
@@ -19,7 +17,6 @@
   height: auto;
   display: flex;
   justify-content: space-between;
-  padding: 2px 28px;
   border-bottom: 1px solid #0a0e0b;
 }
 

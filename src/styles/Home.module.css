@@ -1,41 +1,98 @@
 .mainDiv {
-  width: 90%; /* Cambiado de px a % */
-  height: auto; /* Cambiado de px a auto */
+  width: 360px;
+  height: 488.31px;
   position: relative;
-  top: 50%; /* Cambiado de px a % */
-  left: 2%; /* Cambiado de px a % */
-  gap: 2%; /* Cambiado de px a % */
+  top: 221.35px;
+  left: 35px;
+  gap: 132px;
 }
 
 .imageDiv {
-  width: 100%; /* Cambiado de px a % */
-  height: auto; /* Cambiado de px a auto */
+  width: 360px;
+  height: 170px;
   gap: 0px;
   color: #ededed;
 }
 
 .textContainer {
-  width: 80%; /* Cambiado de px a % */
+  width: 256px;
   font-family: "DM Sans";
-  height: auto; /* Cambiado de px a auto */
+  height: 95px;
   position: relative;
-  top: 15%; /* Cambiado de px a % */
-  left: 10%; /* Cambiado de px a % */
+  top: 59.31px;
+  left: 52px;
   gap: 0px;
 }
 
-/* Añade media queries para adaptar el diseño a diferentes tamaños de pantalla */
-@media (max-width: 600px) {
-  .mainDiv {
-    width: 100%; /* Cambiado de px a % */
-    height: auto; /* Cambiado de px a auto */
-    position: relative;
-    top: 50%; /* Cambiado de px a % */
-    left: 2%; /* Cambiado de px a % */
-    gap: 2%; /* Cambiado de px a % */
-  }
-  
-  .text1 {
-    font-size: 28px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
-  }
+.text1 {
+  font-family: "DM Sans";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 46.87px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.logo {
+  position: relative;
+  left: 147px;
+}
+
+.rdstudio {
+  position: relative;
+  left: 120px;
+  padding-top: 400px;
+}
+
+.imgsContainer {
+  margin-top: 150px;
+}
+.contenedor {
+  max-width: 100%;
+  height: auto;
+  padding: 7px 28px 7px 28px;
+  margin-bottom: 16px;
+  position: relative;
+  min-width: 374px; /* Asegúrate de que el contenedor sea al menos tan ancho como la imagen */
+  max-width: 430px;
+}
+
+.imagen {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Asegúrate de que la imagen cubra todo el contenedor sin distorsionarse */
+}
+
+.t {
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  transform: translate(-10%, -60%);
+  width: 236px;
+  height: 62px;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.25px;
+  letter-spacing: 0.2em;
+  text-align: left;
+  color: #ededed;
+  padding: 10px;
+  margin-top: 220px;
+}
+
+.textoArriba {
+  position: relative;
+  top: 115px;
+  left: 20px;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  width: 374px;
+  height: 135px;
+  opacity: 1;
+  padding-top: 50px;
+  margin-bottom: 225px;
 }

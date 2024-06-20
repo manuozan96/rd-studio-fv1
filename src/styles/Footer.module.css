@@ -1,135 +1,100 @@
 .layout {
-  width: 100%;
-  max-width: 430px;
-  height: auto;
-  padding: 2em 0;
+  width: 430px;
+  height: auto; /* Cambiado a auto */
+  padding: 115px 0;
   background-color: #f94940;
-  display: flex;
-  flex-direction: column;
-  gap: 3.5em;
+  display: flex; /* Agregado para permitir el uso de gap */
+  flex-direction: column; /* Agregado para permitir el uso de gap */
+  gap: 56px; /* Ahora tendrá efecto porque layout es un contenedor flex */
 }
 
 .layout .text {
-  width: 100%;
-  max-width: 223px;
+  width: 223px;
   height: auto;
-  padding: 0 1.75em 0 2.5em;
+  padding: 0px 28px 0px 40px;
   font-family: "DM Sans", sans-serif;
-  font-size: 1.125em;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 1.5em;
+  line-height: 23.44px;
   text-align: left;
   color: white;
 }
 
 .layout .section {
   width: 100%;
-  max-width: 430px;
-  height: auto;
   display: flex;
   flex-direction: column;
 }
 
 .layout .link {
+  box-sizing: border-box; /* Agregado para incluir el padding en el ancho total */
   width: 100%;
-  max-width: 430px;
-  height: auto;
-  padding: 1.3125em 1.75em;
+  padding: 21px 28px;
   border-bottom: 1px solid #ededed;
   display: flex;
   justify-content: space-between;
   font-family: "DM Sans", sans-serif;
-  font-size: 2em;
+  font-size: 32px;
   font-weight: 500;
-  line-height: 2.6em;
+  line-height: 41.66px;
   text-align: center;
   text-decoration: none;
-  opacity: 1;
   color: #ededed;
 }
 
 .layout .link .arrow {
-  margin-right: 3.375em;
+  margin-right: 54px;
 }
 
 .layout .newSection {
-  width: 100%;
-  max-width: 430px;
+  width: 430px;
   height: auto;
-  padding: 0 1.75em;
+  padding: 0px 28px;
   display: flex;
   flex-direction: column;
-  gap: 1.0625em;
+  gap: 17px;
 }
 
 .layout .subSection {
   width: 100%;
-  max-width: 374px;
+  box-sizing: border-box;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25em;
+  display: flex; /* Agregado para permitir el uso de gap */
+  flex-direction: column; /* Agregado para permitir el uso de gap */
+  gap: 4px; /* Ahora tendrá efecto porque subSection es un contenedor flex */
 }
 
 .layout .officeText {
   font-family: "DM Sans", sans-serif;
-  font-size: 1.125em;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 1.5em;
+  line-height: 23.44px;
   text-align: left;
   color: #ededed;
   text-transform: uppercase;
 }
 
 .layout .iconSection {
+  box-sizing: border-box;
   width: 100%;
-  max-width: 430px;
   height: 30px;
-  padding: 0 1.75em;
+  padding-left: 10%; /* Cambiado a 0px para eliminar el padding */
   display: flex;
   justify-content: flex-start;
 }
-
 .layout .icon {
-  width: 30px;
+  width: 30px; /* Ajusta este valor si es necesario */
   height: 30px;
   border: none;
-  margin-right: 0.9375em;
+  margin-right: 15px;
 }
 
 .layout .icon:last-child {
-  margin-right: 0;
+  margin-right: 0; /* Asegura que el último icono no tenga espacio a la derecha */
 }
 
-/* Media query para pantallas más pequeñas */
-@media (max-width: 480px) {
-  .layout {
-    gap: 2em;
-  }
-
-  .layout .text {
-    line-height: 1.3em;
-  }
-
-  .layout .link {
-    padding: 1em;
-    line-height: 2em;
-  }
-
-  .layout .link .arrow {
-    margin-right: 2em;
-  }
-
-  .layout .newSection {
-  }
-
-  .layout .officeText {
-  }
-
-  .layout .iconSection {
-  }
-
-  .layout .icon {
-    margin-right: 0.7em;
+@media (min-width: 430px) {
+  .layout .subSection {
+    padding: 10px; /* Ajusta el padding para pantallas pequeñas */
   }
 }

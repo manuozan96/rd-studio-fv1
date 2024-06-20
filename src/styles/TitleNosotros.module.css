@@ -11,7 +11,6 @@
   margin-top: 180px;
   text-transform: uppercase;
   font-style: normal;
-  padding-left: 20px; /* Agrega espacio a la derecha */
 }
 
 .equipo {
@@ -24,7 +23,6 @@
   text-align: left;
   text-transform: uppercase;
   font-style: italic;
-  padding-left: 20px; /* Agrega espacio a la derecha */
   margin-bottom: 50px;
 }
 

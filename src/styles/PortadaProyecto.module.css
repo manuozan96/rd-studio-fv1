@@ -1,6 +1,5 @@
 .contenedor {
   width: 100%;
-  padding: 0.4375em 1.75em;
   position: relative;
 }
 
@@ -8,6 +7,7 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  margin-bottom: 5.6%;
 }
 
 .t {
@@ -22,8 +22,6 @@
   line-height: 2em; /* Cambiado a em para ser más responsivo */
   letter-spacing: 0.2em;
   text-align: left;
-  color: #ededed;
-  padding: 0.625em; /* Cambiado a em para ser más responsivo */
 }
 
 /* Media query para pantallas más pequeñas */
@@ -32,13 +30,15 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    margin-left: -6.3%;
-    
   }
   .t {
     margin-top: 50%;
     margin-left: 7%;
     font-size: 1.6em; /* Reducir el tamaño de la fuente en pantallas más pequeñas */
     line-height: 1.6em;
+  }
+  .contenedor {
+    width: 100%;
+    position: relative;
   }
 }
