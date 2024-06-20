@@ -16,6 +16,12 @@
   overflow: auto; /* Permite el desplazamiento dentro del contenedor si es necesario */
 }
 
+@media (min-width: 430px) {
+  .container {
+    width: 430px; /* Establece el ancho a 430px en pantallas de 430px o más */
+  }
+}
+
 .header {
   padding: 20px;
 }
