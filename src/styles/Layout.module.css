@@ -1,7 +1,7 @@
 /* Layout styles */
 
 .Layout {
-  overflow: auto;
+  overflow: hidden;
   scrollbar-width: none; /* Para Firefox */
 }
 
