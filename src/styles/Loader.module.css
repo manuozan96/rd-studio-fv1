@@ -1,0 +1,54 @@
+.mainDiv {
+    width: 360px;
+    height: 488.31px;
+    position: relative;
+    top: 221.35px;
+    left: 35px;
+    gap: 132px;
+  }
+  
+  .imageDiv {
+    width: 360px;
+    height: 170px;
+    gap: 0px;
+    color: #ededed;
+  }
+  
+  .textContainer {
+    width: 256px;
+    height: 95px;
+    position: relative;
+    top: 59.31px;
+    left: 52px;
+    text-transform: uppercase;
+    gap: 0px;
+  }
+  
+  .text1 {
+    font-family: "DM Sans";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46.87px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .text {
+    font-family: "Instrument Serif";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46.87px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-top: -40px;
+    white-space: nowrap;
+  }
+  
+  .logo {
+    position: relative;
+    left: 147px; /* Ajusta este valor según tus necesidades */
+  }
+  

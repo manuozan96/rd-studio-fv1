@@ -1,0 +1,29 @@
+.nuestro {
+  font-family: "DM Sans";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 46.87px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  width: 350px;
+  height: 101px;
+  color: #0a0e0b;
+  text-transform: uppercase;
+  font-style: normal;
+  padding-left: 20px;
+  padding-top: 115px;
+}
+
+.equipo {
+  font-family: "Instrument Serif";
+  margin-top: -50px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 46.87px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  text-transform: uppercase;
+  font-style: italic;
+  padding-left: 20px; /* Agrega espacio a la derecha */
+  /* padding-bottom: 115px; */
+}

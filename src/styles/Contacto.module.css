@@ -1,0 +1,76 @@
+.bgContacto {
+  background-image: url("/Fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 430px;
+  z-index: 1;
+}
+.contactoText {
+  /* height: 932px; */
+  font-family: "DM Sans";
+  font-size: 24px;
+  color: #ededed;
+  line-height: 24px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 400px;
+}
+
+.boldText {
+  font-weight: bold;
+  margin-left: 45px; /* Ajusta este valor según tus necesidades */
+}
+
+.infoSection {
+  font-family: "DM Sans";
+  font-size: 18px;
+  color: #ededed;
+  width: 374px;
+  text-transform: uppercase;
+  margin-top: 210px;
+  bottom: 0;
+  right: 0;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.infoSection div {
+  margin-bottom: 28px;
+}
+
+.container {
+  width: 430px;
+  height: 832px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ededed;
+}
+
+.innerSection {
+  width: 400px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "DM Sans";
+  font-size: 14px;
+}
+
+.inputField {
+  width: 402px;
+  height: 45px;
+  border: none;
+  border-bottom: 1px solid #0a0e0b;
+  background-color: #e6e6e6;
+  margin-top: 8px;
+  font-weight: 500;
+  font-family: "DM Sans";
+  font-size: 24px;
+  line-height: 31.25px;
+  margin-bottom: 56px;
+}

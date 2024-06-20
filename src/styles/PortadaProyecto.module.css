@@ -1,0 +1,32 @@
+.contenedor {
+  max-width: 100%;
+  height: auto;
+  padding: 7px 28px 7px 28px;
+  position: relative;
+  min-width: 374px;
+  max-width: 43px;
+}
+
+.imagen {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Asegúrate de que la imagen cubra todo el contenedor sin distorsionarse */
+}
+
+.t {
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  transform: translate(-10%, -60%);
+  width: 236px;
+  height: 62px;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.25px;
+  letter-spacing: 0.2em;
+  text-align: left;
+  color: #ededed;
+  padding: 10px;
+  margin-top: 220px;
+}
